@@ -33,4 +33,7 @@ Como vemos, la suma de números de 4 bits de la derecha genera un desbordamiento
 ## Números binarios con signo
 La manera mas extendida de representar hoy números de distinto signo es usando el *two´s complements method* o también conocido como *radix complement*.
 Para un sistema con un tamaño de n bits, los números con signo son representados con 2^n - x.
-Ejemplo: en un sistema de 4 bits, el número 7 se representa como 2^4 - 7 = 9 que es 1001
+Ejemplo: en un sistema de 4 bits, el número 7 se representa como 2^4 - 7 = 9 que es 1001![[Captura de pantalla 2026-05-27 123318.png]]
+
+Los rangos de representación de números con este sistema van de -(2^n-1) a 2^n-1 -1.
+Lo interesante de este método es que, para la substacción es simplemente utilizar los números dados a restar y estos darán el resultado. Por ej: (-2) + (-3) es lo mismo que 1110 + 1101 que daría = 11011, sacando el acarreo, nos queda 1011 que es -5.
